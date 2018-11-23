@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native'
 
 import Simples from './components/Simples'
 import ParImpar from './components/ParImpar'
-import { Inverter } from './components/Multi'
+import { Inverter, Megasena } from './components/Multi'
 
 export default class App extends Component {
   render() {
@@ -12,6 +12,7 @@ export default class App extends Component {
         <Simples texto="Flexivel" />
         <ParImpar numero={32} />
       <Inverter texto="React Native" />
+    <Megasena numeros={6} />
       </View>
     )
   }
