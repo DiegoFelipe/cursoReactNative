@@ -11,7 +11,7 @@ function generateRandomNumber(min, max) {
 	return Math.floor(Math.random() * (max-min+1)) + min
 }
 
-export const Megasena = props => {
+export const MegaSena = props => {
 	const [min, max] = [1, 60]
 	const numero = Array(props.numeros || 6).fill(0).map((num) => generateRandomNumber(min, max))
 
