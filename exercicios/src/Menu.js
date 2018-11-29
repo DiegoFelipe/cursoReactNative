@@ -5,8 +5,17 @@ import Simples from './components/Simples'
 import ParImpar from './components/ParImpar'
 import Inverter, { MegaSena } from './components/Multi'
 import Plataforma from './components/Plataforma'
+import ValidarProps from './components/ValidarProps'
+import Evento from './components/Evento'
 
 export default createDrawerNavigator({
+
+    Evento: {
+      screen: () => <Evento/>
+    },
+    ValidarProps: {
+      screen: () => <ValidarProps ano={20} />,
+    },
     MegaSena: {
         screen: () => <MegaSena numeros={8} />,
         navigationOptions: { title: 'Mega Sena' }
