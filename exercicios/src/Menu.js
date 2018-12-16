@@ -7,9 +7,14 @@ import Inverter, { MegaSena } from './components/Multi'
 import Plataforma from './components/Plataforma'
 import ValidarProps from './components/ValidarProps'
 import Evento from './components/Evento'
+import ListaFlex from './components/ListaFlex'
 
 export default createDrawerNavigator({
 
+    ListaFlex: {
+      screen: ListaFlex,
+      navigationOptions: { title: 'Lista Flex'}
+    },
     Evento: {
       screen: () => <Evento/>
     },
